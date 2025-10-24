@@ -22,11 +22,6 @@ public class Covid19Pacient extends Observable {
 		this.age = years;
 		this.sf=sf;
 	}
-	public Covid19Pacient(String name, int years) {
-		this.name = name;
-		this.age = years;
-		
-	}
 	
 	public String getName() {
 		return name;
