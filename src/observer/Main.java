@@ -17,17 +17,19 @@ public class Main {
 		new	PacientSymptomGUI	(pacient);
 		new PacientThermometerGUI(pacient);
 		new SemaphorGUI(pacient);
-		/*Observable	pacient2=new	Covid19Pacient("jon",	45,new SymptomFactory());
-		//new	PacientObserverGUI	(pacient2);
+		Observable	pacient2=new	Covid19Pacient("jon",	45,new SymptomFactory());
+		new	PacientObserverGUI	(pacient2);
 		new	PacientObserverGUI	(pacient2);
 		new	PacientSymptomGUI	(pacient2);
 		new PacientThermometerGUI(pacient2);
+		new SemaphorGUI(pacient2);
 		Observable	pacient3=new	Covid19Pacient("mikel",	60,new SymptomFactory());
-		//new	PacientObserverGUI	(pacient2);
+		new	PacientObserverGUI	(pacient2);
 		new	PacientObserverGUI	(pacient3);
 		new	PacientSymptomGUI	(pacient3);
 		new PacientThermometerGUI(pacient3);
-		*/
+		new SemaphorGUI(pacient3);
+		
 		
 
 	}
