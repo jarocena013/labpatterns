@@ -6,11 +6,14 @@ import javax.swing.JTable;
 
 import domain.Covid19Pacient;
 import domain.Symptom;
+import factory.SymptomFactory;
+import iterator.Covid19PacientModelAdapter;
 
 	public class Main {
 
 		public static void main(String[] args) {
-			Covid19Pacient p=new Covid19Pacient("Ane", 29);
+			SymptomFactory fs = new SymptomFactory();
+			Covid19Pacient p=new Covid19Pacient("Ane", 29,fs);
 			p.addSymptom(new Symptom("s1", 10, 10), 1);
 			p.addSymptom(new Symptom("s2", 10, 10), 2);
 			p.addSymptom(new Symptom("s3", 10, 10), 3);
