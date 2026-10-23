@@ -2,12 +2,13 @@ package iterator;
 
 import java.util.Comparator;
 
-public class SymptomNameOrdenatu implements Comparator {
+import domain.Symptom;
+
+public class SymptomNameOrdenatu implements Comparator<Symptom> {
 
 	@Override
-	public int compare(Object o1, Object o2) {
-		// TODO Auto-generated method stub
-		return 0;
+	public int compare(Symptom s1, Symptom s2) {
+		return s1.getName().compareTo(s2.getName());
 	}
 
 }

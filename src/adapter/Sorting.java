@@ -9,8 +9,8 @@ import domain.Symptom;
 
 
 public class Sorting {
-	public static Iterator<Object> sortedIterator(InvertedIterator it, Comparator<Object> comparator) {
-	      List<Object> list = new ArrayList<>();
+	public static Iterator<Symptom> sortedIterator(InvertedIterator it, Comparator<Symptom> comparator) {
+	      List<Symptom> list = new ArrayList<>();
 	      it.goLast();
 	      while (it.hasPrevious()) {
 	    	  Symptom s= (Symptom)it.previous();
